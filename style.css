@@ -1,138 +1,131 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-main{
-    background-image: url(images/bg-intro-desktop.png);
+main {
+  background-image: url(images/bg-intro-desktop.png);
   background-color: rgba(221, 24, 10, 0.7);
   padding-top: 50px;
   padding-bottom: 5rem;
-
 }
 
-.container{
-    width: 80%;
-    margin:0 auto;
+.container {
+  width: 80%;
+  margin: 0 auto;
 }
 
-.flex{
-    display: flex;
-    flex-direction: row;
-   padding:30px 30px;
-  
-    
+.flex {
+  display: flex;
+  flex-direction: row;
+  padding: 30px 30px;
 }
 
-.left-div{
-    color: white;
-    margin-top: 3rem;
-    padding-right:2rem;
-
+.left-div {
+  color: white;
+  margin-top: 3rem;
+  padding-right: 2rem;
 }
-.left-div h1{
-    font-size: 3rem;
-    font-weight: bolder;
-    margin:20px 0;
-}
-
-.left-div p{
-    font-size: 20px;
-    font-weight: bold;
-    margin:20px 0;
-    line-height: 1.5rem;
+.left-div h1 {
+  font-size: 3rem;
+  font-weight: bolder;
+  margin: 20px 0;
 }
 
-.form-div{
-color: white;
-}
-.form-div{
-    color: white;
-    }
-#form-p{
-    background:rgb(26, 26, 223);
-    padding:10px 0;
-    text-align: center;
-    border-radius: 5px;
-    margin-bottom: 10px;
- 
-}
-form{
-    background-color: white;
-    border-radius: 10px;
-    padding: 30px 20px;
-
+.left-div p {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 20px 0;
+  line-height: 1.5rem;
 }
 
-input, button{
+.form-div {
+  color: white;
+}
+.form-div {
+  color: white;
+}
+#form-p {
+  background: rgb(26, 26, 223);
+  padding: 10px 0;
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+form {
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px 20px;
+}
+
+input,
+button {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+  margin-bottom: 20px;
+}
+
+input:focus{
+  outline-color: rgb(25, 96, 177);
+}
+
+input:invalid {
+ outline-color: red;
+}
+button {
+  text-transform: capitalize;
+  background-color: green;
+  box-shadow: 0 4px 8px 0 rgba(17, 16, 16, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: white;
+  font-size: 18px;
+}
+form p {
+  color: rgb(48, 46, 46);
+  font-size: 12px;
+  text-align: center;
+}
+
+form p span {
+  color: red;
+}
+
+footer {
+  text-align: center;
+  background-color: black;
+  padding: 20px;
+  color: white;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .flex {
+    flex-direction: column;
+    padding-top: 0;
+  }
+  main {
+    padding-top: 0;
+    background-image: url(images/bg-intro-mobile.png);
+  }
+
+  .left-div {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .container {
     width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    resize: vertical;
-    margin-bottom: 20px;
+    margin: auto;
   }
+}
 
-  input:focus{
-    outline-color: rgb(25, 96, 177);
+@media (max-width: 968px) {
+  .container {
+    width: 100%;
+    margin: auto;
   }
-  button{
-    text-transform: capitalize;
-    background-color: green;
-    box-shadow: 0 4px 8px 0 rgba(17, 16, 16, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    color: white;
-    font-size: 18px;
-  }
-form p{
-    color: rgb(48, 46, 46);
-    font-size: 12px;
-    text-align: center;
-}
-
-form p span{
-    color:red
-   
-}
-
-footer{
-    text-align: center;
-    background-color: black;
-    padding: 20px;
-    color: white;
-    font-size: 18px;
-}
-
-
-
-@media (max-width:768px) {
-    .flex{
-        flex-direction: column;
-        padding-top: 0;
-    }
-    main{
-
-      padding-top: 0;
-      background-image: url(images/bg-intro-mobile.png);
-    
-    }
-
-    .left-div{
-        margin-top: 1rem;
-        margin-bottom: 2rem;
-    
-    }
-    
-    .container{
-        width: 100%;
-        margin: auto;
-    }
-}
-
-@media (max-width:968px) {
-
-    .container{
-        width: 100%;
-        margin: auto;
-    }
 }
