@@ -8,6 +8,7 @@ main {
   background-color: rgba(221, 24, 10, 0.7);
   padding-top: 50px;
   padding-bottom: 5rem;
+
 }
 
 .container {
@@ -25,6 +26,7 @@ main {
   color: white;
   margin-top: 3rem;
   padding-right: 2rem;
+  width: 50%;
 }
 .left-div h1 {
   font-size: 3rem;
@@ -41,10 +43,10 @@ main {
 
 .form-div {
   color: white;
+  width: 50%;
+
 }
-.form-div {
-  color: white;
-}
+
 #form-p {
   background: rgb(26, 26, 223);
   padding: 10px 0;
@@ -58,24 +60,16 @@ form {
   padding: 30px 20px;
 }
 
-input,
+.form-group input,
 button {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  box-sizing: border-box;
-  resize: vertical;
-  margin-bottom: 20px;
 }
 
-input:focus{
-  outline-color: rgb(25, 96, 177);
-}
 
-input:invalid {
- outline-color: red;
-}
+
 button {
   text-transform: capitalize;
   background-color: green;
@@ -83,6 +77,8 @@ button {
     0 6px 20px 0 rgba(0, 0, 0, 0.19);
   color: white;
   font-size: 18px;
+  margin-bottom: 30px;
+  margin-top: 10px;
 }
 form p {
   color: rgb(48, 46, 46);
@@ -94,6 +90,58 @@ form p span {
   color: red;
 }
 
+.form-group{
+    color:black;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.form-group i{
+    position: absolute;
+    top:10px;
+    right: 10px;
+    visibility: hidden;
+}
+
+.form-group .check-circle{
+  color:green;
+}
+.form-group .exclamation-circle{
+    color:red;
+  }
+
+.form-group small{
+    visibility: hidden;
+    position: absolute;
+    top:45px;
+    right: 10px;
+    color:red;
+}
+
+.form-group.success input{
+    border-color: green;
+}
+
+.form-group.error input{
+    border:2px solid red;
+}
+
+.form-group.success i.check-circle{
+ visibility:visible;
+ color:green;
+}
+
+.form-group.error i.exclamation-circle{
+  visibility:visible;
+  color: red;
+ }
+
+ .form-group.error small{
+  visibility: visible;
+  color: red;
+ }
+
+
 footer {
   text-align: center;
   background-color: black;
@@ -104,7 +152,9 @@ footer {
 
 @media (max-width: 768px) {
   .flex {
-    flex-direction: column;
+   display: flex;
+   flex-direction: column;
+    width: 100%;
     padding-top: 0;
   }
   main {
@@ -113,14 +163,19 @@ footer {
   }
 
   .left-div {
+    width: 100%;
     margin-top: 1rem;
     margin-bottom: 2rem;
   }
-
+  .form-div {
+    color: white;
+    width: 100%;
+  
+  }
   .container {
     width: 100%;
     margin: auto;
-  }
+  } 
 }
 
 @media (max-width: 968px) {
